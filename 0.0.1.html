@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация о фильме</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 50px;
+        }
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .poster {
+            width: 330px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            margin-right: 0px;
+        }
+        .info {
+            text-align: center;
+        }
+        .info h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .info p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .info .rating {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #ff6a00;
+        }
+        .info .description {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 40px;
+        }
+        .actors {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .actors h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .actors .actor {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">KINOBOOK</div>
+    <div class="container">
+        <a href="https://avatars.mds.yandex.net/get-entity_search/5674964/583754368/S134x201_2x"><img class="poster" src="https://avatars.mds.yandex.net/get-entity_search/5674964/583754368/S134x201_2x" alt="Постер фильма"></a>
+        <div class="info">
+            <h2>Название фильма</h2>
+            <p class="rating">Оценка IMDB: 8.5/10</p>
+            <p class="description">Описание фильма: ...</p>
+            <p>Год выпуска: 2000</p>
+            <p>Продолжительность: 120 минут</p>
+        </div>
+        <div class="actors">
+            <h3>В главных ролях</h3>
+            <div class="actor">
+                <p>Актер 1</p>
+            </div>
+            <div class="actor">
+                <p>Актер 2</p>
+            </div>
+            <div class="actor">
+                <p>Актер 3</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
