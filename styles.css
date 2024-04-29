@@ -58,7 +58,7 @@ body {
 
 .imdb-rating, .movie-year, .movie-duration, .movie-genre, .movie-director {
     font-size: 18px;
-    margin: 5px 0;
+    margin: 15px 0;
 }
 
 .movie-description {
@@ -70,14 +70,16 @@ body {
 .movie-cast h2 {
     font-size: 24px;
     margin-bottom: 10px;
+    margin-top: 12px;
 }
 
 .movie-cast ul {
     list-style-type: none;
     padding: 0;
+    margin-left: 60px;
 }
 
 .movie-cast li {
     font-size: 18px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
