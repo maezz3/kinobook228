@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style_moviepattern.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Movie-Page</title>
+</head>
+<body>
+    <div class="navigation">
+        <div class="logo">Kinobook</div>
+        <div class="menu">
+            <ul class="nav">
+                <li><a class="link1" href="films_homepage.html">Фильмы</a></li>
+                <li><a class="link1" href="books_homepage.html">Книги</a></li>
+                <li><a class="button" href="register.html">Sign up</a></li>
+                <li><a class="button" href="login.html">Log in</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="movie-page">
+        <div class="movie-poster-container">
+            <img class="movie-poster" src="{{ src }}" alt="Постер фильма">
+            <form action="/submit-rating" method="POST">
+                <div class="rating-container">
+                    <p class="rating-text">Оцените фильм</p>
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5">★</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4">★</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3">★</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2">★</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1">★</label>
+                    </div>
+                    <input type="submit" value="Оценить" class="submit-button"/>
+                </div>
+            </form>
+        </div>
+        <div class="movie-info-container">
+            <div class="movie-info">
+                <h1 class="movie-title">{{ title }}</h1>
+                <p class="imdb-rating">IMDB рейтинг: {{ rating }}</p>
+                <p class="movie-year">Год выпуска: {{ year }} год</p>
+                <p class="movie-duration">Продолжительность: {{ duration }} минут</p>
+                <p class="movie-genre">Жанр: {{ genre }}</p>
+                <p class="movie-director">Режиссер: {{ director }}</p>
+            </div>
+            <div class="movie-cast">
+                <h2>В главных ролях:</h2>
+                <ul>
+                    <li>{{ actor1 }}</li>
+                    <li>{{ actor2 }}</li>
+                    <li>{{ actor3 }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
