@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kinobook</title>
-	<link rel="stylesheet" href="style_main_list.css">
+	<link rel="stylesheet" href="style_films.css">
 	<link rel="stylesheet" href="fontawesome-free/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:600&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
@@ -11,21 +11,48 @@
 <body>
 	
 		<div class="logo">Kinobook</div>
-		
+		<div class="menu">	
+			<a id="lin2" class="link1" href="books_homepage.html">Книги</a>
+		</div>
 		<div class="nav">
-			<a id="but1" class="button" href="register.html">Sign up</a>
-			<a id="but2" class="button" href="login.html">Log in</a>		
+			<a id="but1" class="button1" href="register.html">Sign up</a>
+			<a id="but2" class="button1" href="login.html">Log in</a>		
 		</div>
 		
 		<div class="description">
-			<h1>Выберите, что вы хотите найти</h1>
+			<h1>Найти фильм</h1>
 			<form action="" method="post">
-				<div class="menu">
-					<!-- <input type="text" placeholder="Найти"> -->
-					<a id="lin1" class="link1" href="films_homepage.html">Фильмы</a>
-					<a id="lin2" class="link1" href="books_homepage.html">Книги</a>
+                
+                <input type="text" name="films" placeholder="Название фильма">
+				<input type="text" name="year" placeholder="Год выпуска">
+                <input type="text" name="author" placeholder="Режисcер">
+				<!-- <label class="junr" for="pet-select">Жанр:</label> -->
+				<div class="junre">
+					<select name="pets" id="pet-select">
+						<option value="">--Выберите жанр--</option>
+						<option value="option1">Action</option>
+						<option value="option2">Adventure</option>
+						<option value="option3">Animation</option>
+						<option value="option4">Comedy</option>
+						<option value="option5">Documentary</option>
+						<option value="option6">Drama</option>
+						<option value="option7">Family</option>
+						<option value="option8">Fantasy</option>
+						<option value="option9">Film-Noir</option>
+						<option value="option10">Horror</option>
+						<option value="option11">Musical</option>
+						<option value="option12">Mystery</option>
+						<option value="option13">Romance</option>
+						<option value="option14">Sci-Fi</option>
+						<option value="option15">Short</option>
+						<option value="option16">Thriller</option>
+						<option value="option17">War</option>
+						<option value="option18">Western</option>
+					</select>
 				</div>
-			</form>		
+                <!-- <div class="msg">{{ msg }}</div> -->
+                <input type="submit" value="Поиск">
+            </form>
 		</div>
 
 		<div class="end-head">
