@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style_bookpattern.css') }}">
+    <link rel="stylesheet" type="text/css" href="styles_b.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <title>Book-page</title>
@@ -14,10 +15,21 @@
         <div class="logo">Kinobook</div>
         <div class="menu">
             <ul class="nav">
+
                 <li><a class="link1" href="films_homepage.html">Фильмы</a></li>
                 <li><a class="link1" href="books_homepage.html">Книги</a></li>
                 <li><a class="button" href="register.html">Sign up</a></li>
                 <li><a class="button" href="login.html">Log in</a></li>
+                <li><a class="link1" href="#">Фильмы</a></li>
+                <li><a class="link1" href="#">Книги</a></li>
+                <li><a class="button" href="#">Sign up</a></li>
+                <li><a class="button" href="#">Log in</a></li>
+            </ul>
+            <ul class="nav icon">
+                <li><a class="link" href="#"><i class="fas fa-search"></i></a></li>
+                <li><a class="link" href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a class="link" href="#"><i class="fas fa-user"></i></a></li>
+
             </ul>
         </div>
     </div>
@@ -47,6 +59,25 @@
                 <p class="num-of-pages">Количество страниц: {{ pagecount }}</p>
                 <p class="book-rating">Оценка книги: {{ avgRating }}</p>
                 <p class="book-description">{{ description }}</p>
+            <img class="book-cover" src="{{}}" alt="Обложка книги">
+        </div>
+        <div class="book-info-container">
+            <div class="book-info">
+                <h1 class="book-title">{{Название книги}}</h1>
+                <p class="book-autor">Автор: {{...}}</p>
+                <p class="book-genre">Жанр: {{...}}</p>
+                <p class="num-of-pages">Количество страниц: {{...}}</p>
+                <p class="book-publication">Дата издания: {{...}}</p>
+                <p class="book-rating">Оценка книги: {{...}}</p>
+                <p class="book-description">{{Описание книги здесь}}</p>
+            </div>
+            <div class="book-roles">
+                <h2>Главные герои:</h2>
+                <ul>
+                    <li>{{Герой 1}}</li>
+                    <li>{{Герой 2}}</li>
+                    <li>{{Герой 3}}</li>
+                </ul>
             </div>
         </div>
     </div>
